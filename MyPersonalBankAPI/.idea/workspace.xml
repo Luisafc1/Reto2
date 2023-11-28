@@ -4,27 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b9262d4-d580-4511-b207-dc1cff32ab99" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/persistencia/PrestamosDBRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/es/netmind/mypersonalbankapi/persistencia/PrestamosDBRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/config/ReposConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/config/ReposConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/modelos/prestamos/Prestamo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/modelos/prestamos/Prestamo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/persistencia/ClientesDBRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/persistencia/ClientesDBRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/persistencia/ClientesInMemoryRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/persistencia/ClientesInMemoryRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/persistencia/IClientesRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/persistencia/IClientesRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/persistencia/IPrestamosRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/persistencia/IPrestamosRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/persistencia/PrestamosInMemoryRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/persistencia/PrestamosInMemoryRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/es/netmind/mypersonalbankapi/persistencia/ClientesDBRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/es/netmind/mypersonalbankapi/persistencia/ClientesDBRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/config/ReposConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/config/ReposConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/modelos/prestamos/Prestamo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/modelos/prestamos/Prestamo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/persistencia/ClientesDBRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/persistencia/ClientesDBRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/persistencia/ClientesInMemoryRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/persistencia/ClientesInMemoryRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/persistencia/IClientesRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/persistencia/IClientesRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/persistencia/IPrestamosRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/persistencia/IPrestamosRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/persistencia/PrestamosInMemoryRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/persistencia/PrestamosInMemoryRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/es/netmind/mypersonalbankapi/persistencia/ClientesDBRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/es/netmind/mypersonalbankapi/persistencia/ClientesDBRepositoryTest.class" afterDir="false" />
-    </list>
+    <list default="true" id="4b9262d4-d580-4511-b207-dc1cff32ab99" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
