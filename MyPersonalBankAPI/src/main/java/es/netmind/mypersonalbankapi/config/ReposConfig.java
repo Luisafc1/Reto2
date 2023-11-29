@@ -14,14 +14,14 @@ public class ReposConfig {
     @Value("${db_url}")
     String db_url1;
 
-@Bean
+    @Bean
     public IClientesRepo createIClientesRepo() {
         ClientesDBRepository repo = new ClientesDBRepository();
         repo.setDb_url1(db_url1);
         return repo;
     }
 
-@Bean
+    @Bean
     public IPrestamosRepo createIPrestamosRepo() {
         PrestamosDBRepository repo = new PrestamosDBRepository();
         repo.setDb_url1(db_url1);

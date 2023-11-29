@@ -8,7 +8,7 @@ import java.util.List;
 public interface IClientesRepo {
     public Empresa insertClientesEmpresa(Empresa nuevoClienteEmpresa) throws Exception;
 
-    public List<Cliente> getAll();
+    public List<Cliente> getAll() throws Exception;
 
     public Cliente getClientById(Integer id) throws Exception;
 
@@ -23,6 +23,6 @@ public interface IClientesRepo {
     public Cliente getDetalleCliente(int idCliente) throws Exception;
 
     public Cliente actualizarCliente(Cliente c2) throws Exception;
-
+    public Cliente getCliente(int idCliente) throws Exception;
 
 }

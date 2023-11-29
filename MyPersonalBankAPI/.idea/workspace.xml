@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b9262d4-d580-4511-b207-dc1cff32ab99" name="Changes" comment="" />
+    <list default="true" id="4b9262d4-d580-4511-b207-dc1cff32ab99" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/controladores/IClientesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/config/ReposConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/config/ReposConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/config/ServicesConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/config/ServicesConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/controladores/ClientesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/controladores/ClientesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/persistencia/ClientesDBRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/persistencia/ClientesDBRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/persistencia/ClientesInMemoryRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/persistencia/ClientesInMemoryRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/persistencia/IClientesRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/persistencia/IClientesRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/es/netmind/mypersonalbankapi/controladores/ClientesControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/es/netmind/mypersonalbankapi/controladores/ClientesControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/es/netmind/mypersonalbankapi/persistencia/ClientesDBRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/es/netmind/mypersonalbankapi/persistencia/ClientesDBRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/controladores/ClientesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/controladores/ClientesController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/persistencia/ClientesDBRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/persistencia/ClientesDBRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/persistencia/ClientesInMemoryRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/persistencia/ClientesInMemoryRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/persistencia/IClientesRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/persistencia/IClientesRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/es/netmind/mypersonalbankapi/controladores/ClientesControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/es/netmind/mypersonalbankapi/controladores/ClientesControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/es/netmind/mypersonalbankapi/persistencia/ClientesDBRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/es/netmind/mypersonalbankapi/persistencia/ClientesDBRepositoryTest.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +34,7 @@
       <list>
         <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -52,7 +72,54 @@
       <recent name="es.netmind.mypersonalbankapi.persistencia" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ClientesDBRepositoryTest">
+  <component name="RunManager" selected="JUnit.ClientesControllerTest">
+    <configuration name="ClientesControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="main.java.es.netmind.mypersonalbankapi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="es.netmind.mypersonalbankapi.controladores.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="es.netmind.mypersonalbankapi.controladores" />
+      <option name="MAIN_CLASS_NAME" value="es.netmind.mypersonalbankapi.controladores.ClientesControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientesControllerTest.dadosClientesenRepo_cuandosepidelista_entonceslistaOK" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="main.java.es.netmind.mypersonalbankapi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="es.netmind.mypersonalbankapi.controladores.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="es.netmind.mypersonalbankapi.controladores" />
+      <option name="MAIN_CLASS_NAME" value="es.netmind.mypersonalbankapi.controladores.ClientesControllerTest" />
+      <option name="METHOD_NAME" value="dadosClientesenRepo_cuandosepidelista_entonceslistaOK" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientesControllerTest.testBeans" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="main.java.es.netmind.mypersonalbankapi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="es.netmind.mypersonalbankapi.controladores.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="es.netmind.mypersonalbankapi.controladores" />
+      <option name="MAIN_CLASS_NAME" value="es.netmind.mypersonalbankapi.controladores.ClientesControllerTest" />
+      <option name="METHOD_NAME" value="testBeans" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ClientesDBRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="main.java.es.netmind.mypersonalbankapi" />
       <extension name="coverage">
@@ -64,54 +131,6 @@
       <option name="PACKAGE_NAME" value="es.netmind.mypersonalbankapi.persistencia" />
       <option name="MAIN_CLASS_NAME" value="es.netmind.mypersonalbankapi.persistencia.ClientesDBRepositoryTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ClientesDBRepositoryTest.dadosCliente_cuandolistarDetalleClienteEnDB_entoncesIdValido" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="main.java.es.netmind.mypersonalbankapi" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="es.netmind.mypersonalbankapi.persistencia.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="es.netmind.mypersonalbankapi.persistencia" />
-      <option name="MAIN_CLASS_NAME" value="es.netmind.mypersonalbankapi.persistencia.ClientesDBRepositoryTest" />
-      <option name="METHOD_NAME" value="dadosCliente_cuandolistarDetalleClienteEnDB_entoncesIdValido" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ClientesDBRepositoryTest.dadosClientesEmpresa_cuandolistarClientesEmpresaEnDB_entoncesIdValido" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="main.java.es.netmind.mypersonalbankapi" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="es.netmind.mypersonalbankapi.persistencia.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="es.netmind.mypersonalbankapi.persistencia" />
-      <option name="MAIN_CLASS_NAME" value="es.netmind.mypersonalbankapi.persistencia.ClientesDBRepositoryTest" />
-      <option name="METHOD_NAME" value="dadosClientesEmpresa_cuandolistarClientesEmpresaEnDB_entoncesIdValido" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ClientesDBRepositoryTest.dadounCliente_ActualizarClienteEnDB_entoncesIdValido" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="main.java.es.netmind.mypersonalbankapi" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="es.netmind.mypersonalbankapi.persistencia.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="es.netmind.mypersonalbankapi.persistencia" />
-      <option name="MAIN_CLASS_NAME" value="es.netmind.mypersonalbankapi.persistencia.ClientesDBRepositoryTest" />
-      <option name="METHOD_NAME" value="dadounCliente_ActualizarClienteEnDB_entoncesIdValido" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -133,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ClientesDBRepositoryTest" />
+        <item itemvalue="JUnit.ClientesControllerTest" />
+        <item itemvalue="JUnit.ClientesControllerTest.dadosClientesenRepo_cuandosepidelista_entonceslistaOK" />
+        <item itemvalue="JUnit.ClientesControllerTest.testBeans" />
         <item itemvalue="JUnit.PrestamosDBRepositoryTest" />
-        <item itemvalue="JUnit.ClientesDBRepositoryTest.dadosClientesEmpresa_cuandolistarClientesEmpresaEnDB_entoncesIdValido" />
-        <item itemvalue="JUnit.ClientesDBRepositoryTest.dadounCliente_ActualizarClienteEnDB_entoncesIdValido" />
-        <item itemvalue="JUnit.ClientesDBRepositoryTest.dadosCliente_cuandolistarDetalleClienteEnDB_entoncesIdValido" />
+        <item itemvalue="JUnit.ClientesDBRepositoryTest" />
       </list>
     </recent_temporary>
   </component>
@@ -177,6 +196,16 @@
           <url>file://$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/persistencia/ClientesDBRepository.java</url>
           <line>146</line>
           <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/es/netmind/mypersonalbankapi/controladores/ClientesControllerTest.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/controladores/ClientesController.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

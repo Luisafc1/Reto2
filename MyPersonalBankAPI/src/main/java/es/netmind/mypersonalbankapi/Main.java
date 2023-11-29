@@ -7,6 +7,7 @@ import es.netmind.mypersonalbankapi.controladores.PrestamosController;
 import java.util.Arrays;
 
 public class Main {
+    /*
     public static void main(String[] args) {
         System.out.println("╔════════════════════════╗");
         System.out.println("║  MY PERSONAL BANK API  ║");
@@ -123,5 +124,5 @@ public class Main {
 
         System.out.println("\nEVALUAR PRÉSTAMO:");
         System.out.println("clients {uid} loan-evaluation {cantidad > 0}");
-    }
+    }*/
 }

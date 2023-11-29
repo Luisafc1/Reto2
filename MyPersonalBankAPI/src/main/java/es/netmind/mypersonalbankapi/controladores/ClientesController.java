@@ -5,20 +5,25 @@ import es.netmind.mypersonalbankapi.modelos.clientes.Cliente;
 import es.netmind.mypersonalbankapi.modelos.prestamos.Prestamo;
 import es.netmind.mypersonalbankapi.persistencia.*;
 import es.netmind.mypersonalbankapi.utils.ClientesUtils;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.time.DateTimeException;
 import java.time.LocalDate;
 import java.util.List;
 
-public class ClientesController {
+@Setter
+@Getter
+public class ClientesController implements IClientesController {
 
-    private static IClientesRepo clientesRepo = ClientesInMemoryRepo.getInstance();
-    private static ICuentasRepo cuentasRepo = CuentasInMemoryRepo.getInstance();
-    private static IPrestamosRepo prestamosRepo = PrestamosInMemoryRepo.getInstance();
+    private  IClientesRepo clientesRepo;
+     //private  IClientesRepo clientesRepo = ClientesInMemoryRepo.getInstance();
 
-    public static void mostrarLista() {
+
+    public void mostrarLista() throws Exception {
         System.out.println("\nLista de clientes:");
         System.out.println("───────────────────────────────────");
+
         List<Cliente> clientes = clientesRepo.getAll();
         for (Cliente cl : clientes) {
 
@@ -34,7 +39,12 @@ public class ClientesController {
         }
     }
 
-    public static void mostrarDetalle(Integer uid) {
+    @Override
+    public void eliminar(int i) {
+
+    }
+
+    public  void mostrarDetalle(Integer uid) {
         System.out.println("\nDetalle de cliente: " + uid);
         System.out.println("───────────────────────────────────");
 
@@ -49,7 +59,7 @@ public class ClientesController {
 
     }
 
-    public static void add(String[] args) {
+    public  void add(String[] args) {
         System.out.println("\nAñadiendo cliente");
         System.out.println("───────────────────────────────────");
         try {
@@ -68,7 +78,7 @@ public class ClientesController {
 
     }
 
-    public static void eliminar(Integer uid) {
+    public  void eliminar(Integer uid) {
         System.out.println("\nBorrando cliente: " + uid);
         System.out.println("───────────────────────────────────");
 
@@ -87,7 +97,7 @@ public class ClientesController {
 
     }
 
-    public static void actualizar(Integer uid, String[] args) {
+    public  void actualizar(Integer uid, String[] args) {
         System.out.println("\nActualizando cliente: " + uid);
         System.out.println("───────────────────────────────────");
 
@@ -110,7 +120,7 @@ public class ClientesController {
 
     }
 
-    public static void evaluarPrestamo(Integer uid, Double cantidad) {
+    public  void evaluarPrestamo(Integer uid, Double cantidad) {
         System.out.println("\nEvaluando préstamos de " + cantidad + " EUR para el  cliente: " + uid);
         System.out.println("───────────────────────────────────");
 

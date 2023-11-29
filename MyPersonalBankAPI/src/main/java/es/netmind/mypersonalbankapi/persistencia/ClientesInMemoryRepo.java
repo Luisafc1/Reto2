@@ -103,4 +103,9 @@ public class ClientesInMemoryRepo implements IClientesRepo {
     public Cliente actualizarCliente(Cliente c2) throws Exception {
         return null;
     }
+
+    @Override
+    public Cliente getCliente(int idCliente) throws Exception {
+        return null;
+    }
 }

@@ -160,6 +160,46 @@ public class ClientesDBRepository implements IClientesRepo{
         return c2;
     }
 
+    public Cliente getCliente(int idCliente) throws Exception {
+
+        Cliente c1 = null;
+
+        String sql = "SELECT * FROM cliente c WHERE c.id = ?";
+
+        try (
+                Connection conn = DriverManager.getConnection(db_url1);
+                PreparedStatement stmt = conn.prepareStatement(sql);
+
+        ) {
+
+            stmt.setInt(1,idCliente);
+            ResultSet rs = stmt.executeQuery();
+
+            while (rs.next()) {
+                c1 = new Cliente(
+                        rs.getInt("id"),
+                        rs.getString("nombre"),
+                        rs.getString("email"),
+                        rs.getString("direccion"),
+                        rs.getDate("alta").toLocalDate(),
+                        rs.getBoolean("activo"),
+                        rs.getBoolean("moroso")) {
+                    @Override
+                    public boolean validar() throws Exception {
+                        return false;
+                    }
+                };
+
+
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+            throw new Exception(e);
+        }
+
+        return c1;
+    }
 
 
 
@@ -182,9 +222,48 @@ public class ClientesDBRepository implements IClientesRepo{
 
 
     @Override
-    public List<Cliente> getAll() {
-        return null;
+    public List<Cliente> getAll() throws Exception {
+
+
+        List<Cliente> c1 = new ArrayList<>();
+
+        String sql = "SELECT * FROM cliente ";
+
+        try (
+                Connection conn = DriverManager.getConnection(db_url1);
+                PreparedStatement stmt = conn.prepareStatement(sql);
+
+        ) {
+
+
+            ResultSet rs = stmt.executeQuery();
+
+            while (rs.next()) {
+                c1.add( new Cliente(
+                        rs.getInt("id"),
+                        rs.getString("nombre"),
+                        rs.getString("email"),
+                        rs.getString("direccion"),
+                        rs.getDate("alta").toLocalDate(),
+                        rs.getBoolean("activo"),
+                        rs.getBoolean("moroso")) {
+                    @Override
+                    public boolean validar() throws Exception {
+                        return false;
+                    }
+                });
+
+
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+            throw new Exception(e);
+        }
+
+        return c1;
     }
+
 
     @Override
     public Cliente getClientById(Integer id) throws Exception {

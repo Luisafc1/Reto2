@@ -59,11 +59,13 @@ class ClientesDBRepositoryTest {
     @Test
     void dadounCliente_ActualizarClienteEnDB_entoncesIdValido() throws Exception {
 
-        Cliente c1 = repo.getDetalleCliente(1);
+        Cliente c1 = repo.getCliente(2);
 
-        c1.setNombre("Andres Iniesta");
+        c1.setNombre("cor petit");
         c1.setEmail("Andres@a");
         c1.setDireccion("Calle de los milagros");
+
+        repo.actualizarCliente(c1);
 
         assertThat(c1.getId(), greaterThan(0));
 
