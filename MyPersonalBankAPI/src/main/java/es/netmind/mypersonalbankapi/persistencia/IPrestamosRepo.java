@@ -19,4 +19,6 @@ public interface IPrestamosRepo {
 
     public Prestamo getLoansByClientAndId(Integer uid, Integer aid) throws Exception;
     public List<Prestamo> getListaPrestamoByCliente(int idCliente) throws Exception;
+
+    public Prestamo getPrestamoByCliente(int idCliente,int idPrestamo) throws Exception;
 }

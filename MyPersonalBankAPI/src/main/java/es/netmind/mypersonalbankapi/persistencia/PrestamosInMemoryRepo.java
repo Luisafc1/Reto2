@@ -118,5 +118,10 @@ public class PrestamosInMemoryRepo implements IPrestamosRepo {
         return null;
     }
 
+    @Override
+    public Prestamo getPrestamoByCliente(int idCliente, int idPrestamo) throws Exception {
+        return null;
+    }
+
 
 }

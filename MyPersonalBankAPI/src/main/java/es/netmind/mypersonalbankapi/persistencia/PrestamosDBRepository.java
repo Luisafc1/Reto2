@@ -52,20 +52,47 @@ public class PrestamosDBRepository implements IPrestamosRepo{
         return prestamo;
     }
 
+     public Prestamo getPrestamoByCliente(int idCliente,int idPrestamo) throws Exception {
 
+        Prestamo prestamo = null;
 
+        String sql = "SELECT * FROM prestamo p, cliente c WHERE c.id = p.cliente_id and c.id=? and p.id=? ";
 
+        try (
+                Connection conn = DriverManager.getConnection(db_url1);
+                PreparedStatement stmt = conn.prepareStatement(sql);
 
+        ) {
 
+            stmt.setInt(1,idCliente);
+            stmt.setInt(2,idPrestamo);
+            ResultSet rs = stmt.executeQuery();
 
+            if (rs.next()) {
+                prestamo =
+                        new Prestamo(
+                                rs.getInt("id"),
+                                rs.getDate("fecha_concesion").toLocalDate(),
+                                rs.getDouble("monto"),
+                                rs.getDouble("saldo"),
+                                rs.getInt("interes"),
+                                rs.getInt("interes_mora"),
+                                rs.getBoolean("moroso"),
+                                rs.getBoolean("liquidado"),
+                                rs.getInt("anios")
+                        );
+            }
 
+            else {
+                throw new Exception();
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            throw new Exception(e);
+        }
 
-
-
-
-
-
-
+        return prestamo;
+    }
 
     @Override
     public List<Prestamo> getAll() {
