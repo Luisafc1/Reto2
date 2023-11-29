@@ -18,4 +18,6 @@ public interface ICuentasRepo {
     public List<Cuenta> getAccountsByClient(Integer uid) throws Exception;
     public Cuenta getAccountsByClientAndId(Integer uid, Integer aid) throws Exception;
 
+    public List<Cuenta> getListaCuentasByCliente(int idCliente) throws Exception;
+
 }
