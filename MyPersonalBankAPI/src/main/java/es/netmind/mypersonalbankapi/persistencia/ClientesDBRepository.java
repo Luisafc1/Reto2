@@ -10,17 +10,29 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Repository;
 
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.transaction.Transactional;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
 @Setter
 @Getter
+@Repository
 public class ClientesDBRepository implements IClientesRepo{
 
+    @PersistenceContext  // Accede al emf; emf.createEntityManager();
+    private EntityManager em;
+
+    @Override
+    @Transactional
+    public Cliente addClient(Cliente cliente) {
+        em.persist(cliente);
+        return cliente;
+    }
 
     private String db_url1;
-
 
     @Override
     public Empresa insertClientesEmpresa(Empresa nuevoClienteEmpresa) throws Exception {
@@ -202,25 +214,6 @@ public class ClientesDBRepository implements IClientesRepo{
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     @Override
     public List<Cliente> getAll() throws Exception {
 
@@ -270,10 +263,10 @@ public class ClientesDBRepository implements IClientesRepo{
         return null;
     }
 
-    @Override
+    /*@Override
     public Cliente addClient(Cliente cliente) throws Exception {
         return null;
-    }
+    }*/
 
     @Override
     public boolean deleteClient(Cliente cliente) throws Exception {

@@ -6,8 +6,22 @@ import es.netmind.mypersonalbankapi.modelos.prestamos.Prestamo;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import lombok.*;
 
+import javax.persistence.*;
+import java.util.Set;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
+@Entity
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+//@NamedQuery(name = "Student.getStudents", query = "SELECT s FROM Student s")
 public abstract class Cliente {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String nombre;
     private String email;
@@ -15,7 +29,10 @@ public abstract class Cliente {
     private LocalDate alta;
     private boolean activo;
     private boolean moroso;
+
+    @Transient
     private List<Cuenta> cuentas;
+    @Transient
     private List<Prestamo> prestamos;
 
     /* CONSTRUCTOR */
