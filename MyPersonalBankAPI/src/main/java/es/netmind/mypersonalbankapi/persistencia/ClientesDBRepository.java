@@ -12,6 +12,7 @@ import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.TypedQuery;
 import javax.transaction.Transactional;
 import java.sql.*;
 import java.util.ArrayList;
@@ -30,6 +31,18 @@ public class ClientesDBRepository implements IClientesRepo{
     public Cliente addClient(Cliente cliente) {
         em.persist(cliente);
         return cliente;
+    }
+
+    @Override
+    @Transactional
+    public List<Cliente> getAll() throws Exception {
+        TypedQuery query = em.createQuery("SELECT c FROM cliente c", Cliente.class);
+
+
+        // USANDO getResultList
+        List<Cliente> resultados = query.getResultList();
+        System.out.println("resultados:" + resultados);
+        return resultados;
     }
 
     private String db_url1;
@@ -214,7 +227,7 @@ public class ClientesDBRepository implements IClientesRepo{
     }
 
 
-    @Override
+    /*@Override
     public List<Cliente> getAll() throws Exception {
 
 
@@ -255,7 +268,7 @@ public class ClientesDBRepository implements IClientesRepo{
         }
 
         return c1;
-    }
+    }*/
 
 
     @Override

@@ -45,6 +45,13 @@ class ClientesDBRepositoryTest {
         assertThat(emp.getId(), greaterThan(0));
     }
 
+    @Test
+    void dadosClientes_cuandolistarClientesEnDB_entoncesIdValido() throws Exception {
+
+        List<Cliente> listaCli = repo.getAll();
+        System.out.println(listaCli);
+        assertThat(listaCli.size(), greaterThan(0));
+    }
 
     @Test
     void dadosClientesEmpresa_cuandolistarClientesEmpresaEnDB_entoncesIdValido() throws Exception {
