@@ -5,15 +5,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b9262d4-d580-4511-b207-dc1cff32ab99" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/persistencia/CuentasDBRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/es/netmind/mypersonalbankapi/persistencia/CuentasDBRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/es/netmind/mypersonalbankapi/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/config/ReposConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/config/ReposConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/persistencia/CuentasInMemoryRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/persistencia/CuentasInMemoryRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/persistencia/ICuentasRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/persistencia/ICuentasRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/config/ReposConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/config/ReposConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/config/SpringConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/config/SpringConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/config/SpringConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/controladores/ClientesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/controladores/ClientesController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/controladores/CuentasController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/controladores/CuentasController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/controladores/IClientesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/controladores/IClientesController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/controladores/PrestamosController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/controladores/PrestamosController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/exceptions/ClienteException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/exceptions/ClienteException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/exceptions/CuentaException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/exceptions/CuentaException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/exceptions/ErrorCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/exceptions/ErrorCode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/exceptions/PrestamoException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/exceptions/PrestamoException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/modelos/clientes/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/modelos/clientes/Cliente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/modelos/clientes/ClientesFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/modelos/clientes/ClientesFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/modelos/clientes/Empresa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/modelos/clientes/Empresa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/modelos/clientes/Personal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/modelos/clientes/Personal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/modelos/cuentas/Ahorro.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/modelos/cuentas/Ahorro.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/modelos/cuentas/Cheque.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/modelos/cuentas/Cheque.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/modelos/cuentas/Corriente.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/modelos/cuentas/Corriente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/modelos/cuentas/Cuenta.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/modelos/cuentas/Cuenta.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/modelos/cuentas/Transaccion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/modelos/cuentas/Transaccion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/modelos/prestamos/Prestamo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/modelos/prestamos/Prestamo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/modelos/prestamos/PrestamoBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/modelos/prestamos/PrestamoBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/persistencia/ClientesDBRepository$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/persistencia/ClientesDBRepository$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/persistencia/ClientesDBRepository$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/persistencia/ClientesDBRepository$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/persistencia/ClientesDBRepository$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/persistencia/ClientesDBRepository$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/persistencia/ClientesDBRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/persistencia/ClientesDBRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/persistencia/ClientesInMemoryRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/persistencia/ClientesInMemoryRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/persistencia/CuentasDBRepository$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/persistencia/CuentasDBRepository$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/persistencia/CuentasDBRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/persistencia/CuentasDBRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/persistencia/CuentasInMemoryRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/persistencia/CuentasInMemoryRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/persistencia/IClientesRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/persistencia/IClientesRepo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/persistencia/ICuentasRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/persistencia/ICuentasRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/persistencia/IPrestamosRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/persistencia/IPrestamosRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/persistencia/PrestamosDBRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/persistencia/PrestamosDBRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/persistencia/PrestamosInMemoryRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/persistencia/PrestamosInMemoryRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/utils/ClientesUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/utils/ClientesUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/es/netmind/mypersonalbankapi/controladores/ClientesControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/es/netmind/mypersonalbankapi/controladores/ClientesControllerTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +58,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -40,6 +74,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2Y7KKHQeidU8Z1oDRXQCXYCE7zC" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -50,8 +87,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "SPRING",
-    "last_opened_file_path": "C:/DXCJava/workspace/Reto5/MyPersonalBankAPI",
+    "git-widget-placeholder": "JPA",
+    "last_opened_file_path": "C:/DXCJava/workspace/OOP-java/SchoolManagerSpringJPASimp",
     "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui"
   }
 }]]></component>
@@ -63,34 +100,26 @@
       <recent name="es.netmind.mypersonalbankapi.persistencia" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CuentasDBRepositoryTest.dadosClienteCuentas_cuandolistarCuentasbyClienteEnDB_entoncesIdValido">
-    <configuration name="ClientesControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AppTest">
+    <configuration name="All in main.java.es.netmind.mypersonalbankapi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="main.java.es.netmind.mypersonalbankapi" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="es.netmind.mypersonalbankapi.controladores.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="es.netmind.mypersonalbankapi.controladores" />
-      <option name="MAIN_CLASS_NAME" value="es.netmind.mypersonalbankapi.controladores.ClientesControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClientesControllerTest.dadosClientesenRepo_cuandosepidelista_entonceslistaOK" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="main.java.es.netmind.mypersonalbankapi" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="es.netmind.mypersonalbankapi.controladores.*" />
+          <option name="PATTERN" value="es.netmind.mypersonalbankapi.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="es.netmind.mypersonalbankapi.controladores" />
-      <option name="MAIN_CLASS_NAME" value="es.netmind.mypersonalbankapi.controladores.ClientesControllerTest" />
-      <option name="METHOD_NAME" value="dadosClientesenRepo_cuandosepidelista_entonceslistaOK" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="es.netmind.mypersonalbankapi" />
+      <option name="MAIN_CLASS_NAME" value="es.netmind.mypersonalbankapi.AppTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -145,11 +174,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AppTest" />
+        <item itemvalue="JUnit.All in main.java.es.netmind.mypersonalbankapi" />
         <item itemvalue="JUnit.CuentasDBRepositoryTest.dadosClienteCuentas_cuandolistarCuentasbyClienteEnDB_entoncesIdValido" />
         <item itemvalue="JUnit.PrestamosDBRepositoryTest.dadosClientePrestamos_cuandoDetallePrestamobyClienteEnDB_entoncesIdValido" />
         <item itemvalue="JUnit.PrestamosDBRepositoryTest.dadosClientePrestamos_cuandoDetallePrestamobyClienteNoExisteEnDB_entoncesIdNoValido" />
-        <item itemvalue="JUnit.ClientesControllerTest" />
-        <item itemvalue="JUnit.ClientesControllerTest.dadosClientesenRepo_cuandosepidelista_entonceslistaOK" />
       </list>
     </recent_temporary>
   </component>
