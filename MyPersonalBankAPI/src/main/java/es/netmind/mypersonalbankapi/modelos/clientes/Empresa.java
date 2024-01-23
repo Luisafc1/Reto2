@@ -1,6 +1,6 @@
 package es.netmind.mypersonalbankapi.modelos.clientes;
 
-import lombok.ToString;
+import lombok.*;
 
 import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
@@ -8,6 +8,10 @@ import javax.persistence.OrderColumn;
 import java.time.LocalDate;
 import java.util.Arrays;
 
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 public class Empresa extends Cliente {
     private String cif;

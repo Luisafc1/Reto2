@@ -1,7 +1,16 @@
 package es.netmind.mypersonalbankapi.modelos.clientes;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import javax.persistence.Entity;
 import java.time.LocalDate;
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 public class Personal extends Cliente {
     private String dni;

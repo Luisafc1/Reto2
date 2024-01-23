@@ -36,7 +36,7 @@ public class ClientesDBRepository implements IClientesRepo{
     @Override
     @Transactional
     public List<Cliente> getAll() throws Exception {
-        TypedQuery query = em.createQuery("SELECT c FROM cliente c", Cliente.class);
+        TypedQuery query = em.createQuery("SELECT c FROM Cliente c", Cliente.class);
 
 
         // USANDO getResultList
