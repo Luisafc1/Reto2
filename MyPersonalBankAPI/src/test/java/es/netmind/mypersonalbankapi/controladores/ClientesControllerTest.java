@@ -1,6 +1,8 @@
 package es.netmind.mypersonalbankapi.controladores;
 
 import es.netmind.mypersonalbankapi.config.SpringConfig;
+import es.netmind.mypersonalbankapi.modelos.clientes.Cliente;
+import es.netmind.mypersonalbankapi.modelos.clientes.Empresa;
 import es.netmind.mypersonalbankapi.persistencia.IClientesRepo;
 import lombok.Getter;
 import lombok.Setter;
@@ -10,12 +12,15 @@ import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Service;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
+import java.time.LocalDate;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -25,6 +30,7 @@ import static org.hamcrest.Matchers.*;
 @Getter
 @ExtendWith(SpringExtension.class)
 @ContextConfiguration(classes = {SpringConfig.class})
+@EnableAutoConfiguration
 class ClientesControllerTest {
 
     @Autowired
@@ -35,10 +41,12 @@ class ClientesControllerTest {
     private final ByteArrayOutputStream errContent = new ByteArrayOutputStream();
     private final PrintStream originalOut = System.out;
     private final PrintStream originalErr = System.err;
+
     @Test
     void testBeans() {
         assertThat(ClientesController, notNullValue());
     }
+
     @BeforeEach
     public void setUpStreams() {
         System.setOut(new PrintStream(outContent));
@@ -82,12 +90,31 @@ class ClientesControllerTest {
 
     }
 
+    @Test
+    @Order(2)
+    void dadosClientesEmpresa_cuandoinsertarClientesEmpresaEnDB_entoncesIdValido() throws Exception {
+
+        Cliente emp = new Empresa(null, "Transaccional", "lms@s.com",
+                "Calle SI 3", LocalDate.now(), true, false, "J12345678", new String[]{"Dev", "Marketing"});
+
+
+        ClientesController.add(emp);
+        ClientesController.mostrarLista();
+        System.out.println(outContent);
+        System.out.println("\nLista de clientes:");
+        System.out.println("───────────────────────────────────");
+        assertThat(outContent.toString(), containsString("Lista de clientes:"));
+        assertThat(outContent.toString(), containsString("───────────────────────────────────"));
+        assertNotEquals(outContent.toString(), containsString("("));
+
+
+    }
+
     @AfterEach
     public void restoreStreams() {
         System.setOut(originalOut);
         System.setErr(originalErr);
     }
-
 
 
 }

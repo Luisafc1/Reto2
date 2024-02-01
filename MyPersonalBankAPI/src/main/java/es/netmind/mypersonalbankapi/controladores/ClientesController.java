@@ -2,6 +2,7 @@ package es.netmind.mypersonalbankapi.controladores;
 
 import es.netmind.mypersonalbankapi.exceptions.ClienteException;
 import es.netmind.mypersonalbankapi.modelos.clientes.Cliente;
+import es.netmind.mypersonalbankapi.modelos.clientes.Empresa;
 import es.netmind.mypersonalbankapi.modelos.prestamos.Prestamo;
 import es.netmind.mypersonalbankapi.persistencia.*;
 import es.netmind.mypersonalbankapi.utils.ClientesUtils;
@@ -23,6 +24,7 @@ public class ClientesController implements IClientesController {
 
     private IClientesRepo clientesRepo;
     //private  IClientesRepo clientesRepo = ClientesInMemoryRepo.getInstance();
+    @Autowired
     private ClienteDataRepo clientesRepoData;
 
     @Transactional
@@ -66,13 +68,13 @@ public class ClientesController implements IClientesController {
     }
 
     @Transactional
-    public void add(String[] args) {
+    public void add(Cliente cliente) {
         System.out.println("\nAñadiendo cliente");
         System.out.println("───────────────────────────────────");
-        try {
-            Cliente cl = ClientesUtils.extractClientFromArgsForCreate(args);
-            clientesRepoData.save(cl);
-            System.out.println("Cliente añadido: " + cl + " 🙂");
+       try {
+            //Cliente cl = ClientesUtils.extractClientFromArgsForCreate(args);
+            clientesRepoData.save(cliente);
+            System.out.println("Cliente añadido: " + cliente + " 🙂");
             mostrarLista();
         } catch (ClienteException e) {
             System.out.println("Cliente NO válido 😞! \nCode: " + e.getCode());
