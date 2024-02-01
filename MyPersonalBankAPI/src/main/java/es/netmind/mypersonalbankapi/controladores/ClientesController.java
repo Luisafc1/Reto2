@@ -7,6 +7,9 @@ import es.netmind.mypersonalbankapi.persistencia.*;
 import es.netmind.mypersonalbankapi.utils.ClientesUtils;
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.time.DateTimeException;
 import java.time.LocalDate;
@@ -14,17 +17,20 @@ import java.util.List;
 
 @Setter
 @Getter
+@Controller
 public class ClientesController implements IClientesController {
 
-    private  IClientesRepo clientesRepo;
-     //private  IClientesRepo clientesRepo = ClientesInMemoryRepo.getInstance();
 
+    private IClientesRepo clientesRepo;
+    //private  IClientesRepo clientesRepo = ClientesInMemoryRepo.getInstance();
+    private ClienteDataRepo clientesRepoData;
 
+    @Transactional
     public void mostrarLista() throws Exception {
         System.out.println("\nLista de clientes:");
         System.out.println("───────────────────────────────────");
 
-        List<Cliente> clientes = clientesRepo.getAll();
+        List<Cliente> clientes = clientesRepoData.findAll();
         for (Cliente cl : clientes) {
 
             try {
@@ -44,7 +50,7 @@ public class ClientesController implements IClientesController {
 
     }
 
-    public  void mostrarDetalle(Integer uid) {
+    public void mostrarDetalle(Integer uid) {
         System.out.println("\nDetalle de cliente: " + uid);
         System.out.println("───────────────────────────────────");
 
@@ -59,12 +65,13 @@ public class ClientesController implements IClientesController {
 
     }
 
-    public  void add(String[] args) {
+    @Transactional
+    public void add(String[] args) {
         System.out.println("\nAñadiendo cliente");
         System.out.println("───────────────────────────────────");
         try {
             Cliente cl = ClientesUtils.extractClientFromArgsForCreate(args);
-            clientesRepo.addClient(cl);
+            clientesRepoData.save(cl);
             System.out.println("Cliente añadido: " + cl + " 🙂");
             mostrarLista();
         } catch (ClienteException e) {
@@ -78,7 +85,7 @@ public class ClientesController implements IClientesController {
 
     }
 
-    public  void eliminar(Integer uid) {
+    public void eliminar(Integer uid) {
         System.out.println("\nBorrando cliente: " + uid);
         System.out.println("───────────────────────────────────");
 
@@ -97,7 +104,7 @@ public class ClientesController implements IClientesController {
 
     }
 
-    public  void actualizar(Integer uid, String[] args) {
+    public void actualizar(Integer uid, String[] args) {
         System.out.println("\nActualizando cliente: " + uid);
         System.out.println("───────────────────────────────────");
 
@@ -120,7 +127,7 @@ public class ClientesController implements IClientesController {
 
     }
 
-    public  void evaluarPrestamo(Integer uid, Double cantidad) {
+    public void evaluarPrestamo(Integer uid, Double cantidad) {
         System.out.println("\nEvaluando préstamos de " + cantidad + " EUR para el  cliente: " + uid);
         System.out.println("───────────────────────────────────");
 
