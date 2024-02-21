@@ -35,6 +35,11 @@ public class ClientesInMemoryRepo implements IClientesRepo {
     }
 
     @Override
+    public Empresa insertClientesEmpresa(Empresa nuevoClienteEmpresa) throws Exception {
+        return null;
+    }
+
+    @Override
     public List<Cliente> getAll() {
         return clientes;
     }
@@ -82,5 +87,25 @@ public class ClientesInMemoryRepo implements IClientesRepo {
             }
             throw new ClienteException("Cliente no existe", ErrorCode.NONEXISTINGCLIENT);
         } else throw new ClienteException("Cliente no válido", ErrorCode.INVALIDCLIENT);
+    }
+
+    @Override
+    public List<Empresa> getListaClienteEmpresa() throws Exception {
+        return null;
+    }
+
+    @Override
+    public Cliente getDetalleCliente(int idCliente) throws Exception {
+        return null;
+    }
+
+    @Override
+    public Cliente actualizarCliente(Cliente c2) throws Exception {
+        return null;
+    }
+
+    @Override
+    public Cliente getCliente(int idCliente) throws Exception {
+        return null;
     }
 }

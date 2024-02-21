@@ -7,15 +7,40 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+import io.swagger.v3.oas.annotations.media.Schema;
+import lombok.*;
+
+import javax.persistence.*;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
+import java.util.Set;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
+@Entity
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+//@NamedQuery(name = "Student.getStudents", query = "SELECT s FROM Student s")
 public abstract class Cliente {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Min(1)
     private Integer id;
+    @NotBlank
+    @Size(min = 4, max = 20)
     private String nombre;
     private String email;
     private String direccion;
     private LocalDate alta;
     private boolean activo;
     private boolean moroso;
+
+    @Transient
     private List<Cuenta> cuentas;
+    @Transient
     private List<Prestamo> prestamos;
 
     /* CONSTRUCTOR */

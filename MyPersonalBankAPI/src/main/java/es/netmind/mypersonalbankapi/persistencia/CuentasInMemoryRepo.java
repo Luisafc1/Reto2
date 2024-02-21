@@ -123,5 +123,10 @@ public class CuentasInMemoryRepo implements ICuentasRepo {
 
     }
 
+    @Override
+    public List<Cuenta> getListaCuentasByCliente(int idCliente) throws Exception {
+        return null;
+    }
+
 
 }

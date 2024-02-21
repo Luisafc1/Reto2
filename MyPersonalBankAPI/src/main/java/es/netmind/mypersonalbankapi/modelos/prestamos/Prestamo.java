@@ -1,21 +1,36 @@
 package es.netmind.mypersonalbankapi.modelos.prestamos;
 
+import lombok.*;
+
+import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.List;
 
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
+@Entity
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 public class Prestamo {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private LocalDate fechaConcesion;
     private Double monto;
     private Double saldo;
     private Double mensualidad;
     private Integer anios;
+    @Transient
     private List<Pago> pagos;
+    @Transient
     private List<Mora> moras;
     private Integer interes;
     private Integer interesMora;
     private boolean moroso;
     private boolean liquidado;
+
 
     /* CONSTRUCTOR */
     public Prestamo(Integer id, LocalDate fechaConcesion, Double monto, Double saldo, Integer interes, Integer interesMora, boolean moroso, boolean liquidado, Integer anios) {
