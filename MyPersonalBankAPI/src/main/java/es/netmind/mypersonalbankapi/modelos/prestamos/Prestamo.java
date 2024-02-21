@@ -22,7 +22,9 @@ public class Prestamo {
     private Double saldo;
     private Double mensualidad;
     private Integer anios;
+    @Transient
     private List<Pago> pagos;
+    @Transient
     private List<Mora> moras;
     private Integer interes;
     private Integer interesMora;

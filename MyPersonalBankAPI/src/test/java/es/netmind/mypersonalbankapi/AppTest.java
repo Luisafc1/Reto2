@@ -4,6 +4,7 @@ package es.netmind.mypersonalbankapi;
     import org.junit.jupiter.api.Test;
     import org.junit.jupiter.api.extension.ExtendWith;
     import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+    import org.springframework.boot.test.context.SpringBootTest;
     import org.springframework.test.context.ContextConfiguration;
     import org.springframework.test.context.junit.jupiter.SpringExtension;
 
@@ -13,9 +14,7 @@ package es.netmind.mypersonalbankapi;
     import static org.junit.jupiter.api.Assertions.assertNotNull;
     import static org.junit.jupiter.api.Assertions.assertTrue;
 
-    @ExtendWith(SpringExtension.class)
-    @ContextConfiguration(classes = {SpringConfig.class})
-    @EnableAutoConfiguration
+    @SpringBootTest
     public class AppTest {
 
         @PersistenceContext

@@ -1,5 +1,6 @@
 package es.netmind.mypersonalbankapi.modelos.cuentas;
 
+import javax.persistence.Transient;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -8,6 +9,7 @@ public abstract class Cuenta {
     private Integer id;
     private LocalDate fechaCreacion;
     private Double saldo;
+    @Transient
     private List<Transaccion> transacciones;
     private Double interes;
     private Double comision;

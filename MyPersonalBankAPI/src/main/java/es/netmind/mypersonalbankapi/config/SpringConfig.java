@@ -7,12 +7,12 @@ import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-@Configuration
-//@Import({ReposConfig.class, ServicesConfig.class})
+/*@Configuration
+@Import({ReposConfig.class, ServicesConfig.class})
 @ComponentScan(basePackages = {"es.netmind.mypersonalbankapi.persistencia", "es.netmind.mypersonalbankapi.controladores"})
-@PropertySource("classpath:application.properties")
+@PropertySource("classpath:_application.properties_")
 @EntityScan("es.netmind.mypersonalbankapi.modelos")
-@EnableJpaRepositories(basePackages = {"es.netmind.mypersonalbankapi.persistencia"})
+@EnableJpaRepositories(basePackages = {"es.netmind.mypersonalbankapi.persistencia"})*/
 public class SpringConfig {
 
 }
