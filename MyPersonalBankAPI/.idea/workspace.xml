@@ -5,48 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ffc2f78-9399-4d12-bb48-325bbc2dbae8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/config/ConfigExceptionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/controller/ClienteServiceController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyPersonalBankAPI.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/config/ReposConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/config/ServicesConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/config/SpringConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/modelos/cuentas/Cuenta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/modelos/cuentas/Cuenta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/modelos/prestamos/Prestamo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/modelos/prestamos/Prestamo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/_application.properties_" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/es/netmind/mypersonalbankapi/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/es/netmind/mypersonalbankapi/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/config.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/config/SpringConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/config/SpringConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/modelos/cuentas/Cuenta.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/modelos/cuentas/Cuenta.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/modelos/prestamos/Prestamo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/modelos/prestamos/Prestamo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/es.netmind.mypersonalbankapi-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/es.netmind.mypersonalbankapi-1.0-SNAPSHOT.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/es/netmind/mypersonalbankapi/AppTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/es/netmind/mypersonalbankapi/controladores/ClientesControllerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/es/netmind/mypersonalbankapi/controladores/PrestamosControllerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/es/netmind/mypersonalbankapi/modelos/clientes/ClienteTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/es/netmind/mypersonalbankapi/persistencia/ClientesDATARepositoryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/es/netmind/mypersonalbankapi/persistencia/ClientesDBRepositoryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/es/netmind/mypersonalbankapi/persistencia/ClientesJPARepositoryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/es/netmind/mypersonalbankapi/persistencia/CuentasDBRepositoryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/es/netmind/mypersonalbankapi/persistencia/PrestamosDBRepositoryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/modelos/clientes/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/modelos/clientes/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/modelos/clientes/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/modelos/clientes/Cliente.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -78,6 +55,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\DXCJava\workspace\Reto8\MyPersonalBankAPI\src\main\resources" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="es.netmind.mypersonalbankapi.config" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -108,6 +88,18 @@
       <option name="presentableId" value="Default" />
       <updated>1708511656090</updated>
     </task>
+    <task id="LOCAL-00001" summary="Update 1">
+      <created>1708512977932</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1708512977932</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 1" />
   </component>
 </project>

@@ -22,7 +22,7 @@ spring:
   application:
     name: MyPersonalBankAPI
   datasource:
-    url: "jdbc:h2:mem:productsdb"
+    url: "jdbc:h2:mem:clientesdb"
     driverClassName: org.h2.Driver
     username: sa
     password: password
@@ -55,7 +55,7 @@ spring:
   application:
     name: MyPersonalBankAPI
   datasource:
-    url: "jdbc:h2:mem:productsdb"
+    url: "jdbc:h2:mem:clientesdb"
     driverClassName: org.h2.Driver
     username: sa
     password: password
