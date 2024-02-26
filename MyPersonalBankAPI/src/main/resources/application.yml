@@ -1,7 +1,7 @@
 spring:
   application:
     name: MyPersonalBankAPI
-  profiles.active: dev
+  profiles.active: prod
 
 server:
   servlet.contextPath: /api
