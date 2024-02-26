@@ -4,6 +4,9 @@ import es.netmind.mypersonalbankapi.modelos.StatusMessage;
 import es.netmind.mypersonalbankapi.modelos.clientes.Cliente;
 import es.netmind.mypersonalbankapi.modelos.clientes.Empresa;
 import es.netmind.mypersonalbankapi.persistencia.ClienteDataRepo;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,13 +41,14 @@ public class ClienteServiceController {
         return new ResponseEntity<>(repo.findAll(), HttpStatus.OK);
     }
 
-    @GetMapping(value = "/{pid}", produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
-    public ResponseEntity<Cliente> getOne(@PathVariable("pid") @Min(1) int id) {
+
+    @GetMapping(value = "/{cid}", produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
+    public ResponseEntity<Cliente> getOne(@PathVariable("cid") @Min(1) int id) {
         return new ResponseEntity<>(repo.findById(id).get(), HttpStatus.OK);
     }
 
-    @PutMapping(value = "/{pid}", consumes = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE}, produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
-    public ResponseEntity<Object> save(@PathVariable("pid") @Min(1) int id,@RequestBody @Valid Empresa modCliente) {
+    @PutMapping(value = "/{cid}", consumes = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE}, produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
+    public ResponseEntity<Object> save(@PathVariable("cid") @Min(1) int id, @RequestBody @Valid Empresa modCliente) {
         if (id == modCliente.getId()) {
             return new ResponseEntity<>(repo.save(modCliente), HttpStatus.ACCEPTED);
         } else {
