@@ -1,5 +1,6 @@
 package es.netmind.mypersonalbankapi.controller;
 
+import es.netmind.mypersonalbankapi.modelos.StatusMessage;
 import es.netmind.mypersonalbankapi.modelos.clientes.Cliente;
 import es.netmind.mypersonalbankapi.modelos.clientes.Empresa;
 import es.netmind.mypersonalbankapi.persistencia.ClienteDataRepo;
@@ -40,6 +41,15 @@ public class ClienteServiceController {
     @GetMapping(value = "/{pid}", produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
     public ResponseEntity<Cliente> getOne(@PathVariable("pid") @Min(1) int id) {
         return new ResponseEntity<>(repo.findById(id).get(), HttpStatus.OK);
+    }
+
+    @PutMapping(value = "/{pid}", consumes = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE}, produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
+    public ResponseEntity<Object> save(@PathVariable("pid") @Min(1) int id,@RequestBody @Valid Empresa modCliente) {
+        if (id == modCliente.getId()) {
+            return new ResponseEntity<>(repo.save(modCliente), HttpStatus.ACCEPTED);
+        } else {
+            return new ResponseEntity<>(new StatusMessage(HttpStatus.PRECONDITION_FAILED.value(), "Id y client.id deben cohincidir"), HttpStatus.PRECONDITION_FAILED);
+        }
     }
 
 }

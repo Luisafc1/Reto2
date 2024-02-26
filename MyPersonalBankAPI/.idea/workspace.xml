@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ffc2f78-9399-4d12-bb48-325bbc2dbae8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/config/ConfigExceptionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/controller/ClienteServiceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/modelos/StatusMessage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/modelos/clientes/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/modelos/clientes/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/modelos/clientes/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/netmind/mypersonalbankapi/modelos/clientes/Cliente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/controller/ClienteServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/netmind/mypersonalbankapi/controller/ClienteServiceController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +52,7 @@
       <recent name="C:\DXCJava\workspace\Reto8\MyPersonalBankAPI\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="es.netmind.mypersonalbankapi.modelos" />
       <recent name="es.netmind.mypersonalbankapi.config" />
     </key>
   </component>
